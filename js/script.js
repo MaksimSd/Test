@@ -14,6 +14,6 @@ const a = prompt ('Один из последних просмотренных �
       d = prompt ('Насколько оцениваете его?', '');
 
 personslMovieDB.movies [a] = b;
-personslMovieDB.movies [c] = db;
+personslMovieDB.movies [c] = d;
 
 console.log (personslMovieDB);
