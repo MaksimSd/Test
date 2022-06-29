@@ -8,12 +8,17 @@ const personalMovieDB = {
     privat: false
 };
 
-const a = prompt ('Один из последних просмотренных фильмов?', ''),
-      b = prompt ('Насколько оцениваете его?', ''),
-      c = prompt ('Один из последних просмотренных фильмов?', ''),
-      d = prompt ('Насколько оцениваете его?', '');
+for (let i = 0; i < 2; i++) {
 
-personslMovieDB.movies [a] = b;
-personslMovieDB.movies [c] = d;
+  const a = prompt ('Один из последних просмотренных фильмов?', ''),
+        b = prompt ('На скольтко его оцениваете?', '');
 
-console.log (personslMovieDB);
+  if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+        personalMovieDB.movies[a] = b;
+  }   else {
+        i--;
+  }  
+
+}
+
+console.log (personalMovieDB);
